@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.input-field {
+  position: relative;
+  width: 350px;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 15px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  background: none;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #ffffff;
+}
+input:invalid {
+  outline: 0;
+}
+input:focus,
+input:valid {
+  border-color: #268469;
+}
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 15px;
+  top: -24px;
+  color: #1f6954;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #1ab188;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  &:hover,
+  &:focus {
+    background: darken(#1ab188, 5%);
+  }
+}
+
+.button-block {
+  display: block;
+  width: auto;
+  padding: 10px 50px;
+}
